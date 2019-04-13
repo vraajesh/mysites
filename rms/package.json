@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD
-  "name": "MySites",
-  "version": "1.0.0",
-=======
   "name": "mysites",
   "version": "1.1.0",
->>>>>>> 039b5992bebac1863c81463b56230d424ab77c7c
   "description": "A set of common build tasks written with npm scripts.",
   "author": "Damon Bauer <hello@damonbauer.me>",
   "license": "MIT",
