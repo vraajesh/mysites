@@ -1,0 +1,7 @@
+**/node_modules
+**/.DS_Store
+**/dist
+**/package.json.lerna_backup
+**/package-lock.json
+**/npm-debug.log
+**/.netbeans.xml
