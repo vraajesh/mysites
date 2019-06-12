@@ -1,0 +1,99 @@
+.grid {
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 100px 300px;
+    grid-auto-rows: 100px;
+    grid-gap: 15px;
+    margin-bottom: 2em;
+
+div {
+    border-radius: 4px;
+    background-color: lightblue;
+    padding: 1em;
+    color: white;
+    font-weight: 500;
+    font-size: 1.5em;
+    &:nth-of-type(odd) {
+        background-color: blue;
+    }
+}
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 300px;
+    grid-gap: 15px;
+    div {
+        border-radius: 4px;
+        background-color: lightblue;
+        padding: 1em;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5em;
+    &:nth-of-type(odd) {
+        background-color: blue;
+    }
+    }  
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: 100px repeat(2, 1fr .5fr );
+    grid-gap: 15px;
+    div {
+        border-radius: 4px;
+        background-color: lightblue;
+        padding: 1em;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5em;
+    &:nth-of-type(odd) {
+        background-color: blue;
+    }
+    }  
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 15px;
+    div {
+        border-radius: 4px;
+        background-color: lightblue;
+        padding: 1em;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5em;
+    &:nth-of-type(odd) {
+        background-color: blue;
+    }
+    }  
+}
+
+.grid5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px; 
+    grid-auto-flow: column;
+    grid-gap: 15px;
+    div {
+        order:3;
+        border-radius: 4px;
+        background-color: lightblue;
+        padding: 1em;
+        color: white;
+        font-weight: 500;
+        font-size: 1.5em;
+    &:nth-of-type(odd) {
+        background-color: blue;
+    }
+    &:nth-child(2) {
+        order:1;
+    }
+    &:nth-child(4) {
+        order:2;
+    }
+    }  
+}
+
